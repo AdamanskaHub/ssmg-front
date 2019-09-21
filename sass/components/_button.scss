@@ -33,22 +33,26 @@
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
     
-    &--white {
-        background-color: $color-white;
-        // color: $color-grey-dark;
-
-        &::after {
-            background-color: $color-white;
+    &--action {
+        height: 62px;
+        background-color: $color-primary;
+        border: 1px solid $color-secondary;
+        color: $color-secondary;
+        font-size: $font-XXlarge;
+        text-transform: uppercase;
+        @include shadow;
+        transition: 0.5s all;
+    
+        &:hover{
+          background-color: $color-secondary;
+          color: $color-primary;
         }
-    }
+      }
 
     &--green {
         background-color: $color-primary;
         color: $color-white;
 
-        &::after {
-            background-color: $color-primary;
-        }
     }
     
     &::after {
