@@ -1,0 +1,25 @@
+{
+  "name": "ssmg-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamanskaHub/ssmg-front.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Emilie Gourmanel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamanskaHub/ssmg-front/issues"
+  },
+  "homepage": "https://github.com/AdamanskaHub/ssmg-front#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
