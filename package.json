@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/AdamanskaHub/ssmg-front#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1",
+    "font-awesome": "^4.7.0",
     "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-regular": "^5.0.13"
   }
 }
