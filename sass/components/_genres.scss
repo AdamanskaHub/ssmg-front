@@ -1,12 +1,44 @@
 .genres-box {
     margin-right: 2rem;
     padding: 2rem;
-    border: 1px $color-secondary;
-    clip-path: 
-    polygon(
-      0% 0%,     /* top left */
-      100% 0%,    /* top right */
-      100% 90%,  /* bottom right */
-      90% 0%,   /* bottom left */
-    );
+    clip-path: polygon(100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
+    display: inline-block;
+    position: relative;
+    width: 200px;
 }
+
+// .genres-box:before {
+//     content: '';
+//     margin-right: 2rem;
+//     padding: 2rem;
+//     clip-path: polygon(100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
+//     display: inline-block;
+//     width: 200px;
+//     -webkit-filter: drop-shadow(2px 2px 0px red)
+//     drop-shadow(2px -2px 0px red)
+//     drop-shadow(-2px 2px 0px red)
+//     drop-shadow(-2px -2px 0px red);
+//   filter: drop-shadow(2px 2px 0px red)
+//     drop-shadow(2px -2px 0px red)
+//     drop-shadow(-2px 2px 0px red)
+//     drop-shadow(-2px -2px 0px red);
+//     display: block;
+//     position: absolute;
+//     top: 2px;
+//     left: 2px;
+// }
+
+// .clip-border {
+//     box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
+//     position: absolute;
+//     padding: 2rem;
+//     top: 0;
+//     left: 0;
+//     display: inline-block;
+//     width: 100%;
+//     height: 100%;
+//     inset: 2px $color-secondary solid;
+//     clip-path: polygon(100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
+// }
