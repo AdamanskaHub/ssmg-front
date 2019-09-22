@@ -1,0 +1,12 @@
+.genres-box {
+    margin-right: 2rem;
+    padding: 2rem;
+    border: 1px $color-secondary;
+    clip-path: 
+    polygon(
+      0% 0%,     /* top left */
+      100% 0%,    /* top right */
+      100% 90%,  /* bottom right */
+      90% 0%,   /* bottom left */
+    );
+}
