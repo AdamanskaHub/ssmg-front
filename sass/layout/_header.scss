@@ -1,0 +1,40 @@
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem 9rem;
+    align-items: center;
+
+    &__search {
+        color:$color-secondary;
+    }
+
+    &__nav{
+        color: $color-secondary;
+    }
+}
+
+.nav--list {
+    list-style-type: none;
+}
+.nav--items {
+    color: $color-secondary;
+    font-size: $font-regular;
+    padding: .5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: rgba($color-secondary, .0);
+    transition: 0.3s;
+
+    &:hover {
+        background-color: rgba($color-secondary, .15);
+        @include textshadow;
+    }
+}
+
+.not--lang {
+    color: rgba($color-secondary, .3);
+}
+
+
+
