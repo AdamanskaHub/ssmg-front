@@ -20,6 +20,8 @@ body {
     background: linear-gradient(180deg, rgba($color-dark-blue-bg, 1) 0%, rgba(32,46,73,1) 100%);
     font-family: 'PT Mono', monospace;
     min-height: 100%;
+    // footer
+    // padding-bottom: 6rem;
 }
 
 .stars-bg {
@@ -37,4 +39,21 @@ body {
         object-fit: cover;
         opacity: .2;
     }
+}
+
+.footer {
+    height: 6rem;
+  background-color: $color-dark-blue-bg;
+  margin-top: 6rem;
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    max-width: 1010px;
+    color: rgba(255,255,255,0.5);
+    // font-family: $default-font;
+  }
 }

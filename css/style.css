@@ -34,6 +34,19 @@ body {
     object-fit: cover;
     opacity: .2; }
 
+.footer {
+  height: 6rem;
+  background-color: #111928;
+  margin-top: 6rem;
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer__content {
+    max-width: 1010px;
+    color: rgba(255, 255, 255, 0.5); }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
