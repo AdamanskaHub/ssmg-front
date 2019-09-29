@@ -2465,6 +2465,40 @@ body {
   left: 2px;
   background-color: #111928; }
 
+.games {
+  margin-top: 6rem; }
+  .games__menu {
+    display: flex;
+    justify-content: space-between; }
+    .games__menu--items {
+      margin-right: 1rem;
+      font-family: "PT Mono", sans-serif;
+      font-size: 24px;
+      color: #B8FBFF;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: .5rem; }
+      .games__menu--items:hover {
+        text-shadow: 0px 0px 4px #00F1FF; }
+      .games__menu--items-active {
+        color: #00F1FF;
+        background-color: rgba(0, 241, 255, 0.15); }
+  .games__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin-top: 2rem; }
+  .games__item:hover {
+    -webkit-box-shadow: 0px 0px 5px 0px #00F1FF;
+    -moz-box-shadow: 0px 0px 5px 0px #00F1FF;
+    box-shadow: 0px 0px 5px 0px #00F1FF; }
+  .games__item--img {
+    border: 1px #00F1FF solid;
+    width: 100%;
+    height: 100%; }
+
 .header {
   width: 100vw;
   display: flex;

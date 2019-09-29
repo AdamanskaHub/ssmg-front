@@ -1,0 +1,51 @@
+.games {
+  margin-top: 6rem;
+  &__menu{
+    display: flex;
+    justify-content: space-between;
+
+    &--items {
+      margin-right: 1rem;
+      font-family: $default-font;
+      font-size: $font-large;
+      color: $color-text;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: .5rem;
+
+      &:hover {
+        @include textshadow;
+      }
+
+      &-active{
+        color: $color-secondary;
+        background-color: rgba($color-secondary, .15);
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(auto, 1fr); 
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem; 
+    margin-top: 2rem;
+  }
+
+  &__item {
+
+    &:hover{
+      @include shadow;
+    }
+
+    &--img{
+      border: 1px $color-secondary solid;
+      width: 100%;
+      height: 100%;
+      
+    }
+
+  }
+
+}
