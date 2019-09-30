@@ -2639,3 +2639,19 @@ body {
   min-width: 320px;
   width: 100%;
   margin-bottom: 2rem; }
+
+.breadcrum {
+  font-family: "PT Mono", sans-serif;
+  color: #00F1FF;
+  text-transform: uppercase;
+  margin: 6rem, 0, 2rem; }
+
+.details {
+  display: flex;
+  max-width: 890px;
+  min-width: 320px;
+  width: 100%;
+  margin-bottom: 2rem; }
+  .details__left {
+    max-width: 800px;
+    margin-right: 4rem; }
