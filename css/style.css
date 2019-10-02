@@ -47,6 +47,9 @@ body {
     max-width: 1010px;
     color: rgba(255, 255, 255, 0.5); }
 
+.flex {
+  display: flex; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -2644,14 +2647,32 @@ body {
   font-family: "PT Mono", sans-serif;
   color: #00F1FF;
   text-transform: uppercase;
-  margin: 6rem, 0, 2rem; }
+  margin: 6rem 0 2rem;
+  display: block; }
 
 .details {
   display: flex;
-  max-width: 890px;
+  justify-content: center;
+  width: 100vw; }
+
+.details__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
   min-width: 320px;
   width: 100%;
   margin-bottom: 2rem; }
-  .details__left {
-    max-width: 800px;
-    margin-right: 4rem; }
+
+.details__columner {
+  display: grid;
+  grid-template-columns: 800px 160px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 4rem;
+  justify-items: start;
+  align-items: stretch; }
+
+.details__left {
+  width: 100%; }
+
+.details__right {
+  max-width: 0; }
