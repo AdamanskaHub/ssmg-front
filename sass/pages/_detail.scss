@@ -14,6 +14,20 @@
     width: 100vw;
 }
 
+.video-box {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
+    &--video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
 
 .details {
 
@@ -25,6 +39,7 @@
     min-width: 320px;
     width: 100%;
     margin-bottom: 2rem;
+    height: -webkit-fill-available;
         
     }
 
@@ -35,6 +50,18 @@
         grid-column-gap: 4rem;
         justify-items: start;
         align-items: stretch;
+    }
+
+    &__about{
+        background-color: $color-dark-blue-bg;
+        padding: 2rem;
+        font-size: $font-regular;
+        color: $color-text;
+        line-height: 2rem;
+        &--title{
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
     }
 
 
@@ -69,6 +96,16 @@
             font-size: $font-large;
             text-align: center;
             margin-bottom: 2rem;
+        }
+
+        &--requirement{
+            font-size: $font-regular;
+            &-halftext{
+                color: rgba($color-text, .4); 
+            }
+            &-text{
+                color: $color-text;
+            }
         }
     }
 
