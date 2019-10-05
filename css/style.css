@@ -50,6 +50,11 @@ body {
 .flex {
   display: flex; }
 
+.centerer {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -2425,22 +2430,52 @@ body {
     background-color: #00F1FF;
     color: #233250; }
 
-.sample-heading {
-  font-size: 2em;
-  padding: 1em; }
-
-.sample-heading-2 {
-  font-size: 1.5em;
-  padding: 1em;
-  border-style: solid;
-  border-width: 0.25em;
-  border-image-source: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox=%220 0 48 48%22%3E%3Crect x=%223%22 y=%223%22 width=%2242%22 height=%2242%22 fill=%22transparent%22 stroke=%22%23333%22 stroke-width=%226%22 %2F%3E%3C%2Fsvg%3E");
-  border-image-slice: 50%;
-  border-image-width: 1em; }
-
-.sample-heading-3 {
-  font-size: 1em;
-  padding: 1em; }
+.btn__corner {
+  display: inline-block;
+  padding: .6em 2rem;
+  border: 0.2em solid #00F1FF;
+  position: relative;
+  background: #111928;
+  text-align: center;
+  transition: 0.5s all;
+  margin-bottom: 2rem; }
+  .btn__corner::before, .btn__corner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #111928;
+    transition: 0.5s all; }
+  .btn__corner::before {
+    top: -0.3em;
+    bottom: -0.3em;
+    left: 1em;
+    right: 1em;
+    transition: 0.5s all; }
+  .btn__corner::after {
+    left: -0.3em;
+    right: -0.3em;
+    top: 1em;
+    bottom: 1em;
+    transition: 0.5s all; }
+  .btn__corner:hover::before {
+    top: -0.3em;
+    bottom: -0.3em;
+    left: 100%;
+    right: 100%; }
+  .btn__corner:hover::after {
+    left: -0.3em;
+    right: -0.3em;
+    top: 100%;
+    bottom: 100%; }
+  .btn__corner--text {
+    color: #00F1FF;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "PT Mono", sans-serif;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0px 0px 4px #00F1FF; }
 
 .genres {
   clip-path: polygon(100% 0, 100% 95%, 85% 100%, 0 100%, 0 0);
@@ -2645,6 +2680,7 @@ body {
 
 .breadcrum {
   font-family: "PT Mono", sans-serif;
+  font-size: 16px;
   color: #00F1FF;
   text-transform: uppercase;
   margin: 6rem 0 2rem;
@@ -2676,3 +2712,31 @@ body {
 
 .details__right {
   width: 100%; }
+  .details__right--titlebox {
+    display: flex;
+    justify-content: space-between; }
+  .details__right--title {
+    color: #00F1FF;
+    font-size: 24px;
+    text-shadow: 0px 0px 4px #00F1FF;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
+  .details__right--description {
+    color: #B8FBFF;
+    font-size: 16px;
+    margin-bottom: 2rem; }
+  .details__right--amount {
+    color: #00F1FF;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 2rem; }
+
+.details__tags {
+  padding: .6rem;
+  background-color: rgba(0, 241, 255, 0.15);
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 2rem; }
+  .details__tags--name {
+    color: #00F1FF;
+    font-size: 16px; }

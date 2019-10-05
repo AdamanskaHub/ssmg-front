@@ -1,37 +1,4 @@
 .btn {
-    // &,
-    // &:link,
-    // &:visited {
-    //     text-transform: uppercase;
-    //     text-decoration: none;
-    //     padding: 1.5rem 4rem;
-    //     display: inline-block;
-    //     border-radius: 10rem;
-    //     transition: all .2s;
-    //     position: relative;
-    //     // font-size: $default-font-size;
-
-    //     //Change for the <button> element
-    //     border: none;
-    //     cursor: pointer;
-    // }
-    
-    // &:hover {
-    //     transform: translateY(-3px);
-    //     box-shadow: 0 1rem 2rem rgba($color-black,.2);
-
-    //     &::after {
-    //         transform: scaleX(1.4) scaleY(1.6);
-    //         opacity: 0;
-    //     }
-    // }
-    
-    // &:active,
-    // &:focus {
-    //     outline: none;
-    //     transform: translateY(-1px);
-    //     box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-    // }
     
     &--action {
         background-color: $color-dark-blue-footer;
@@ -50,6 +17,71 @@
         }
       
     }
+
+    &__corner {
+      display: inline-block;
+      padding: .6em 2rem;
+      border: 0.2em solid $color-secondary;
+      position: relative;
+      background: $color-dark-blue-bg;
+      text-align: center;
+      transition: 0.5s all;
+      margin-bottom: 2rem;
+
+      &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: $color-dark-blue-bg;
+        transition: 0.5s all;
+      }
+      
+      &::before {
+        top: -0.3em; // let it overlap a bit to prevent thin line which could appear during scaling in some browsers etc.
+        bottom: -0.3em;
+        left: 1em;
+        right: 1em;
+        transition: 0.5s all;
+      }
+      
+      &::after{
+        left: -0.3em;
+        right: -0.3em;
+        top: 1em;
+        bottom: 1em;
+        transition: 0.5s all;
+      }
+
+      &:hover{
+        // background-color: aquamarine;
+        &::before {
+          top: -0.3em; 
+          bottom: -0.3em;
+          left: 100%;
+          right: 100%;
+        }
+        
+        &::after{
+          left: -0.3em;
+          right: -0.3em;
+          top: 100%;
+          bottom: 100%;
+        }
+      }
+
+      &--text{
+        color: $color-secondary;
+        font-size: $font-Xlarge;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: $default-font;
+        position: relative;
+        z-index: 1;
+        @include textshadow;
+      }
+    }
+
+
     
     // &::after {
     //     content: "";
@@ -98,28 +130,4 @@
 
 
 
-
-
-
-///////////////
-//   USAGE   //
-///////////////
-
-.sample-heading {
-  font-size: 2em; // using default browser font size of 16px, therefore 32px
-  padding: 1em;
-  
-}
-
-.sample-heading-2 {
-  font-size: 1.5em; // 24px
-  padding: 1em;
-  @include cutCorners(#333, 24, 6, 24);
-}
-
-.sample-heading-3 {
-  font-size: 1em;
-  padding: 1em;
-   // absolute mode: for thin borders you want the border dimensions to be in px
-}
 
