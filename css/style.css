@@ -2534,9 +2534,24 @@ body {
       .games__menu--items-active {
         color: #00F1FF;
         background-color: rgba(0, 241, 255, 0.15); }
+      .games__menu--items-s {
+        margin-right: 1rem;
+        font-family: "PT Mono", sans-serif;
+        font-size: 24px;
+        color: #B8FBFF;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: .5rem; }
   .games__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin-top: 2rem; }
+  .games__items4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
@@ -2683,7 +2698,7 @@ body {
   font-size: 16px;
   color: #00F1FF;
   text-transform: uppercase;
-  margin: 6rem 0 2rem;
+  margin: 0rem 0 2rem;
   display: block; }
 
 .details {
@@ -2710,7 +2725,7 @@ body {
   min-width: 320px;
   width: 100%;
   margin-bottom: 2rem;
-  height: -webkit-fill-available; }
+  height: auto; }
 
 .details__columner {
   display: grid;
@@ -2728,6 +2743,8 @@ body {
   line-height: 2rem; }
   .details__about--title {
     text-transform: uppercase;
+    margin-bottom: 1rem; }
+  .details__about--paragraph {
     margin-bottom: 1rem; }
 
 .details__left {
